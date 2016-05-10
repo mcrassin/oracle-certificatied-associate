@@ -16,10 +16,11 @@ public class Strings {
     }
 
     private static void comparisonStringBuilderAndBuffer() {
+        int times=100000;
         {
             LocalTime before = LocalTime.now();
             StringBuffer sbuff = new StringBuffer();
-            for (int i = 0; i < 10000; i++) {
+            for (int i = 0; i < times; i++) {
                 sbuff.append("test ");
             }
             System.out.println(sbuff.toString());
@@ -30,7 +31,7 @@ public class Strings {
         {
             LocalTime before = LocalTime.now();
             StringBuilder sbuilder = new StringBuilder();
-            for (int i = 0; i < 10000; i++) {
+            for (int i = 0; i < times; i++) {
                 sbuilder.append("test ");
             }
             System.out.println(sbuilder.toString());
