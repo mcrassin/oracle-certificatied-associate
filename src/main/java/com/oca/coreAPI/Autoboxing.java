@@ -36,8 +36,22 @@ public class Autoboxing {
             double d = listDouble.get(2);
             System.out.println(d);
         } catch (Exception e) {
-            e.printStackTrace();
+//            e.printStackTrace();
+            System.out.println("error caught: " + e.getClass().getSimpleName());
         }
+        System.out.println();
+
+        System.out.println("Values can not be autoboxed twice:");
+        functionTestWrapper(4L);    // works: long => Long
+        functionTestPrimitive(4);   // works: int => long
+        //functionTestWrapper(4);   // DOES NOT COMPILE: int => long => Long
+    }
+
+    static void functionTestWrapper(Long longParam) {
+        System.out.println("longParam=" + longParam);
+    }
+    static void functionTestPrimitive(long longParam) {
+        System.out.println("longParam=" + longParam);
     }
 
     static void displayList(List myList) {
