@@ -57,7 +57,7 @@ public class StaticAndInstanceInitializers {
         instCount++; // 3rd instance init.
     }
 
-    StaticAndInstanceInitializers() {
+    protected StaticAndInstanceInitializers() {
         System.out.println("7/ constructor");
         count++;
         instCount++; // last instance init.
