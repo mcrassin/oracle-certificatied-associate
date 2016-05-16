@@ -1,4 +1,4 @@
-package com.oca.methodsAndEncapsulation.overriding;
+package com.oca.classDesign.overriding;
 
 /**
  * @author mcrassin

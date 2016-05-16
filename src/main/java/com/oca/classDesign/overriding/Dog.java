@@ -1,4 +1,4 @@
-package com.oca.methodsAndEncapsulation.overriding;
+package com.oca.classDesign.overriding;
 
 /**
  * Do overriding toString method, method signature are exactly the same.

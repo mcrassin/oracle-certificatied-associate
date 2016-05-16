@@ -1,4 +1,4 @@
-package com.oca.methodsAndEncapsulation.overriding;
+package com.oca.classDesign.overriding;
 
 /**
  * Do not override toString method because of different params.
