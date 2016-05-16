@@ -44,7 +44,7 @@ public class Autoboxing {
         System.out.println("Values can not be autoboxed twice:");
         functionTestWrapper(4L);    // works: long => Long
         functionTestPrimitive(4);   // works: int => long
-        //functionTestWrapper(4);   // DOES NOT COMPILE: int => long => Long
+        //functionTestWrapper(4);   // DOES NOT COMPILE: int => long => Long, too much conversion.
     }
 
     static void functionTestWrapper(Long longParam) {
