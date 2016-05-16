@@ -11,6 +11,10 @@ public class Animal {
         this.name = name;
     }
 
+    protected void walk() {
+        System.out.println("walking");
+    }
+
     private void run(int miles) {
         System.out.println("no thanks");
     }
@@ -20,11 +24,19 @@ public class Animal {
         return new Object();
     }
 
+    public void tryToFoundACarrot() throws ClassNotFoundException {
+        throw new ClassNotFoundException("i do not care about carrot.");
+    }
+
     @Override
     public String toString() {
         return "Animal{" +
                 "name='" + name + '\'' +
                 '}';
+    }
+
+    public static void print(Animal animal) {
+        System.out.println(animal);
     }
 
     public static void main(String[] args) {
