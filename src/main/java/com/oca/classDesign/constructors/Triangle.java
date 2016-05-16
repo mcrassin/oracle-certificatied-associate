@@ -1,4 +1,4 @@
-package com.oca.methodsAndEncapsulation.constructors;
+package com.oca.classDesign.constructors;
 
 /**
  * Example of parent class constructor call auto insertion, if missing

@@ -1,4 +1,4 @@
-package com.oca.methodsAndEncapsulation.constructors;
+package com.oca.classDesign.constructors;
 
 /**
  * Example of simple auto constructor insertion when missing.

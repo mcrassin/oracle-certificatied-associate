@@ -1,4 +1,4 @@
-package com.oca.methodsAndEncapsulation.constructors;
+package com.oca.classDesign.constructors;
 
 /**
  * @author mcrassin
