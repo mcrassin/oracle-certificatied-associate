@@ -28,6 +28,11 @@ public class Animal {
         throw new ClassNotFoundException("i do not care about carrot.");
     }
 
+    protected String getName() {
+        return name;
+    }
+
+
     @Override
     public String toString() {
         return "Animal{" +

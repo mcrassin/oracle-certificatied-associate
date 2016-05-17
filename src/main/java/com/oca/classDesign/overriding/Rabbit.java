@@ -3,6 +3,14 @@ package com.oca.classDesign.overriding;
 import java.util.concurrent.TimeoutException;
 
 /**
+ * Show methods overriding with different parameters
+ *  - walk
+ *  - jump
+ *  - tryToFoundACarrot
+ *
+ * Static method hiding:
+ *  - print
+ *
  * @author mcrassin
  * @since 14/05/2016
  */
