@@ -56,6 +56,10 @@ public class OverloadingExample {
         System.out.println("Object");
     }
 
+    public static void main(String args) {
+        System.out.println("fake main method! never used!");
+    }
+
     public static void main(String[] args) {
 		OverloadingExample example = new OverloadingExample();
 		//

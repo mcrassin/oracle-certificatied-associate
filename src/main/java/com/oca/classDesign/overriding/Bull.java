@@ -2,6 +2,7 @@ package com.oca.classDesign.overriding;
 
 /**
  * Do not override toString method because of different params.
+ * Bull has access to 'name' with default access modifier.
  *
  * @author mcrassin
  * @since 14/05/2016
