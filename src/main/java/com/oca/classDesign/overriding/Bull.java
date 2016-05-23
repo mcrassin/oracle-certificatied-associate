@@ -19,6 +19,7 @@ public class Bull extends Animal {
      * @param age
      * @return
      */
+//    @Override     // DOES NOT COMPILE, as no method is overridden!
     public String toString(int age) {
         return "Bull{" +
                 "name='" + name + '\'' +

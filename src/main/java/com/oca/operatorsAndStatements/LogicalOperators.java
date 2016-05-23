@@ -27,6 +27,20 @@ public class LogicalOperators {
         int res = val & mask;
 
         /**
+         * operators order
+         */
+        int var1 = 3;
+        int hugeOperation = 3 << 1 + -2 * -++var1 - 7;
+        //                  3 << 1 + -2 * -4 - 7
+        //                  3 << 1 + 8 - 7
+        //                  3 << 9 - 7
+        //                  3 << 2      mean 3 shift 2 times on the left
+        //                  3 * 2 * 2
+        //                  12
+        System.out.println("huge operation result: " + hugeOperation);
+        System.out.println();
+
+        /**
          * Showing a AND operator
          */
         System.out.println("AND operator:");
