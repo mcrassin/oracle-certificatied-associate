@@ -43,7 +43,11 @@ public class LambdaExample2 {
         results.stream().forEach(d -> System.out.println(d.toString()));
 
         System.out.println("Complex expression, doing an action (displaying) as well:");
-        results = searchDog(dogs, (d, i) -> {if (i == 0) System.out.println(d.toString()); return i == 0;});
+        results = searchDog(
+                dogs,
+                (d, i) -> {if (i == 0) System.out.println(d.toString()); return i == 0;}
+//                d, i -> {if (i == 0) System.out.println(d.toString()); return i == 0;}      // DOES NOT COMPILE, cannot resolve d. parenthesis are mandatory with more than 1 arg.
+        );
 
         System.out.println("Last test:");
         //results = searchDog(dogs, d, i -> i == 4); // DOES NOT COMPILE, parenthesis are mandatory!!
