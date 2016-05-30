@@ -10,9 +10,24 @@ import java.time.temporal.TemporalUnit;
 public class Strings {
 
     public static void main(String[] args) {
+        stringPool();
         substringMethods();
         replaceMethods();
         comparisonStringBuilderAndBuffer();
+    }
+
+    private static void stringPool() {
+        String s1 = "abc";  // 'abc' created in thread pool
+        String s2 = "abc";  // s2 points to 'abc' in thread pool
+
+        if (s1 == s2) {
+            System.out.println("both s1 and s2 point to the same address");
+        }
+
+        String s3 = new String("abc");
+        if (s1 != s3) {
+            System.out.println("As new operator is used, the String is not stored in the string pool, and thus address are different.");
+        }
     }
 
     private static void comparisonStringBuilderAndBuffer() {

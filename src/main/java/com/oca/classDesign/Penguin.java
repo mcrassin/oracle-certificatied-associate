@@ -25,4 +25,9 @@ final public class Penguin extends Animal {
                 "name='" + getName() + '\'' +
                 "}";
     }
+
+    public static void main(String[] args) {
+//        Penguin penguin = new Animal("test"); // DOES NOT COMPILE, incompatibles types
+        Animal animal = new Penguin("gentoo");
+    }
 }
