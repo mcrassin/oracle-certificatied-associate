@@ -28,9 +28,6 @@ public class InstanceOfOperator {
         System.out.println("base instanceof MyDerived1 => " + (base instanceof MyDerived1));
 //        System.out.println("derived1 instanceof base => " + (derived1 instanceof base));    // DOES NOT COMPILE, unknown class 'base'
 
-        // TODO: caster 2 class fils ?
-
-
     }
 
 }
