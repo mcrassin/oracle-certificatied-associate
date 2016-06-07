@@ -9,7 +9,7 @@ public interface NamedAnimalIF {
      * Static
      */
 
-    /*public static*/ int animalNumber = 6;
+    /*public static final*/ int animalNumber = 6;
     //static {} // DOES NOT COMPILE, not allowed in interface.
 
     static void printDetails(NamedAnimalIF animalIF) {
@@ -20,7 +20,7 @@ public interface NamedAnimalIF {
      * NON static
      */
 
-    /*public*/ String getName();
+    /*public abstract*/ String getName();
 
     /*public*/ default int getWeight() {
         return 20;

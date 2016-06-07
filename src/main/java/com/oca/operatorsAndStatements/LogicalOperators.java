@@ -27,7 +27,7 @@ public class LogicalOperators {
         int res = val & mask;
 
         /**
-         * operators order
+         * operators precedence / order
          */
         int var1 = 3;
         int hugeOperation = 3 << 1 + -2 * -++var1 - 7;
@@ -38,6 +38,17 @@ public class LogicalOperators {
         //                  3 * 2 * 2
         //                  12
         System.out.println("huge operation result: " + hugeOperation);
+
+        /**
+         * shift operator before and operator.
+         */
+        hugeOperation = 0x000F & 2 << 3;
+        //              0x000F & 16
+        //              15 & 16
+        //              000001111
+        //             & 00010000
+        //              0
+        System.out.println("second operation result: " + hugeOperation);
         System.out.println();
 
         /**
@@ -81,6 +92,13 @@ public class LogicalOperators {
         System.out.println("signed                    " + Integer.toString(calcSigned, 2) + " => " + calcSigned);
         int calcUnsigned = signed << 24 >>> 24;
         System.out.println("unsigned                  " + Integer.toString(calcUnsigned, 2) + " => " + calcUnsigned);
+
+        /**
+         * unary complement bitwise operator
+         */
+//        byte test1 = 129;     // DOES NOT COMPILE
+        byte test1 = 56;
+        System.out.println("my byte: " + test1 + " and the complement: " + (~test1));
 
     }
 

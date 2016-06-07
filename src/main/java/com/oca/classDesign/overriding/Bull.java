@@ -27,10 +27,18 @@ public class Bull extends Animal {
                 "}";
     }
 
+    public void run(int miles) {
+        System.out.println("Yeah, bull are not lazy!");
+    }
+
     public static void main(String[] args) {
         Bull a = new Bull("benny");
         System.out.println(a);
         System.out.println(a.toString(5));
+        a.print(a);
+        a.run(5);
 
+        Animal b = new Bull("Andy");
+//        b.run(5); // DOES NOT COMPILE, try to call private Animal.run, and FAILS
     }
 }

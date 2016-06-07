@@ -95,5 +95,6 @@ public class Rabbit extends Animal {
         }
         Animal.print(rabbit);
         Rabbit.print(rabbit);
+        rabbit.print(rabbit);   // call Animal.print as rabbit is stored in a Animal ref.
     }
 }

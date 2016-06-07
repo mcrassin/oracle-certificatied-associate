@@ -6,9 +6,9 @@ package com.oca.classDesign.interfaces;
  */
 public interface AnimalDescriptionIF {
 
-    /*public static*/ int animalNumber = 0;
+    /*public static final*/ int animalNumber = 0;
 
-    /*public*/ String getName() throws Exception;
+    /*public abstract*/ String getName() throws Exception;
 
     /*public*/ default double getAge() {
         return 1;
